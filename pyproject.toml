@@ -1,16 +1,29 @@
 [project]
 name = "teleport"
 version = "0.1.0"
-description = "Add your description here"
+description = "A simple CLI teleporting tool"
 readme = "README.md"
 authors = [
     { name = "allavinner", email = "joel.w.ottosson@gmail.com" }
 ]
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "click>=8.2.1",
+    "pydantic>=2.11.7",
+    "toml>=0.10.2",
+]
+
+[dependency-groups]
+dev = [
+    "uv>=0.8.11",
+    "pytest>=8.4.1",
+    "ruff>=0.12.9",
+    "mypy>=1.17.1",
+    "types-toml>=0.10.8.20240310",
+]
 
 [project.scripts]
-teleport = "teleport:main"
+teleport = "teleport.cli:main"
 
 [build-system]
 requires = ["hatchling"]
