@@ -5,10 +5,10 @@
     <div style="display: flex; flex-direction: column; align-item: center">
         <p>A simple CLI teleporting tool.</p>
         <p>Save your favorite paths, and teleport there quickly on demand.</p>
+        </br>
+        </br>
     </div>
 </div>
-</br>
-</br>
 
 ## Installation
 
