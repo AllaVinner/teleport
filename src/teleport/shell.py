@@ -3,7 +3,13 @@ def shell() -> str:
 tp() {
     if [ $# -eq 1 ]; then
         local result
-        result="$(teleport get "$@")" && cd "$result"
+        result="$(teleport get "$@")" 
+        if [ $? -eq 0 ]; then
+            cd "$result"
+        else
+            echo "$result"
+            false
+        fi
     else
         teleport $@
     fi
