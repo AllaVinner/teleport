@@ -1,8 +1,8 @@
 <div align="center">
   <h1>
-  <img align="right" src="./assets/teleport-icon.png" alt="Teleport Icon" width="128" height="128">
-  Teleport CLI</h1>
-  <p><em>Instant file system navigation</em></p>
+  <img align="left" src="./assets/teleport-icon.png" alt="Teleport Icon" width="128" height="128">
+  Teleport CLI
+  </h1>
 </div>
 
 # Teleport
