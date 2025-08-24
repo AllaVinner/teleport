@@ -1,3 +1,5 @@
+<img align="right" src="./assets/teleport-icon.png" alt="Teleport Icon" width="64" height="64">
+
 # Teleport
 A simple CLI teleporting tool.
 
