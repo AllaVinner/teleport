@@ -1,8 +1,8 @@
 # Teleport
 
-<div style="flex-container">
+<div style="display: flex">
     <img align="left" src="./assets/teleport-icon.png" alt="Teleport Icon" width="128" height="128" style="margin-right: 16px;">
-    <div>
+    <div style="display: flex; flex-direction: column; align-item: center">
         <p>A simple CLI teleporting tool.</p>
         <p>Save your favorite paths, and teleport there quickly on demand.</p>
     </div>
