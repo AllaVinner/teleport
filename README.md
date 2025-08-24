@@ -1,5 +1,3 @@
-
-
 # Teleport
 
 <div style="flex-container">
@@ -7,7 +5,8 @@
     <p>A simple CLI teleporting tool.</p>
     <p>Save your favorite paths, and teleport there quickly on demand.</p>
 </div>
-
+</br>
+</br>
 
 ## Installation
 
