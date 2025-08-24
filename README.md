@@ -1,7 +1,10 @@
 <img align="right" src="./assets/teleport-icon.png" alt="Teleport Icon" width="128" height="128">
 
 # Teleport
+
 A simple CLI teleporting tool.
+
+<img align="right" src="./assets/teleport-icon.png" alt="Teleport Icon" width="128" height="128">
 
 Save your favorite paths, and teleport there quickly on demand.
 
