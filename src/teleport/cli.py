@@ -63,7 +63,8 @@ def add_destination(name: str, path: Path, mode: WriteMode) -> None:
 @cli_error_handler
 def list_dests(scope: str | None) -> None:
     res = list_destinations()
-    msg = "\n".join([f"{name}: {path}" for name, path in res.items()])
+    max_name = max([len(name) for name in res.keys()])
+    msg = "\n".join([f"{name:<{max_name}}: {path}" for name, path in res.items()])
     click.echo(msg)
 
 
