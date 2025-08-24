@@ -1,11 +1,13 @@
-<div align="left">
-  <div style="flex-container">
-    <img align="left" src="./assets/teleport-icon.png" alt="Teleport Icon" width="128" height="128">
-    <h1>
-    Teleport CLI
-    </h1>
-  </div>
-</div>
+<img align="left" src="./assets/teleport-icon.png" alt="Teleport Icon" width="64" height="64" style="margin-right: 16px;">
+
+<h2 style="margin-left: 80px; padding-top: 16px;">Teleport CLI Tool</h2>
+
+a
+a
+a
+a
+a
+a
 
 # Teleport
 
