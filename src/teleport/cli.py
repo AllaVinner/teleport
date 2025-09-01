@@ -7,8 +7,9 @@ from teleport.add import WriteMode, add
 from teleport.init import init
 from teleport.get import get
 from teleport.list_destinations import list_destinations
-from teleport.shell import shell
+from teleport.activate import activate, Shell
 from teleport.remove import remove
+from typing import get_args
 
 
 def cli_error_handler(f):
@@ -74,11 +75,14 @@ def clear_config() -> None:
     clear()
 
 
-@click.command("shell")
+@click.command("activate")
+@click.option(
+    "-s", "--shell", type=click.Choice(get_args(Shell)), default=get_args(Shell)[0]
+)
 @click.argument("scope", required=False)
 @cli_error_handler
-def shell_command(scope) -> None:
-    res = shell()
+def activate_command(shell: Shell, scope) -> None:
+    res = activate(shell)
     click.echo(res)
 
 
@@ -86,7 +90,7 @@ cli.add_command(get_dest)
 cli.add_command(init_project)
 cli.add_command(add_destination)
 cli.add_command(list_dests)
-cli.add_command(shell_command)
+cli.add_command(activate_command)
 cli.add_command(clear_config)
 cli.add_command(remove_dest)
 

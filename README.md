@@ -20,7 +20,12 @@ uv install tool .
 
 Add to your `.bashrc` or similar.
 ```bash
-eval $(teleport shell)
+eval $(teleport activate --shell bash)
+```
+
+For **PowerShell** in `$PROFILE`: 
+```powershell
+Invoke-Expression ($(teleport activate --shell powershell) -join "`n")
 ```
 
 ## Quickstart
